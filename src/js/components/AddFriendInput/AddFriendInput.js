@@ -21,6 +21,9 @@ export default class AddFriendInput extends Component {
   }
 
   handleChange(e) {
+
+    console.log("   hi, iam add something in input", e.target.value);
+
     this.setState({ name: e.target.value });
   }
 
@@ -38,7 +41,7 @@ export default class AddFriendInput extends Component {
         type="text"
         autoFocus="true"
         className="form-control addFriendInput"
-        placeholder="Type the name of a friend"
+        placeholder="plase input something"
         value={this.state.name}
         onChange={this.handleChange}
         onKeyDown={this.handleSubmit} />
