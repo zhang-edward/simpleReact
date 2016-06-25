@@ -4,13 +4,15 @@ import { Route, IndexRoute, Redirect } from 'react-router';
 import Root from './components/root';
 import FriendListApp from './containers/FriendListApp/FriendListApp';
 import NotFoundView from './views/NotFoundView';
-import HiApp from './containers/hiApp/HiApp'
+import HiApp from './containers/hiApp/HiApp';
+import MadLibberApp from './containers/MadLibber/MadLibberApp';
+
 export default (
   <Route path="/" component={Root}>
-    <IndexRoute component={FriendListApp} />
+    <IndexRoute component={MadLibberApp} />
 
 
-    <Route path="/friends" component={HiApp}/>
+    <Route path="/login" component={HiApp}/>
   </Route>
 );
     //<Redirect from="*" to="404" />
