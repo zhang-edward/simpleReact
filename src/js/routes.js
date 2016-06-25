@@ -10,7 +10,7 @@ export default (
     <IndexRoute component={FriendListApp} />
 
 
-    <Route path="/friends" component={HiApp}/>
+    <Route path="/hi" component={HiApp}/>
   </Route>
 );
     //<Redirect from="*" to="404" />
