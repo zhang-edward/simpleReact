@@ -1,6 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 
-export default class App extends Component {
+
+//container of route
+export default class Root extends Component {
   static propTypes = {
     children: PropTypes.element.isRequired
   };
