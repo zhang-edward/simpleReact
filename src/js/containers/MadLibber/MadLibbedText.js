@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './MadLibbedText.scss';
 
 export default class MadLibbedText extends Component {
 
