@@ -19,27 +19,6 @@ class FriendListApp extends Component {
 
   onDrop (files) {
   console.log('Received files: ', files);
-  this.callAPI(files)
-
-  }
-
-  callAPI(file){
-
-    var url="https://api.havenondemand.com/1/api/sync/ocrdocument/v1"
-    fetch(url,
-    {
-      method: 'POST',
-
-
-      body: file
-    }).then(response=>{
-             console.log("this is response", response)
-          })
-      .catch(function(ex) {
-          console.log('parsing failed', ex)
-        })
-
-
   }
 
 
@@ -49,7 +28,7 @@ class FriendListApp extends Component {
     return (
       <div className="friendListApp">
 
-        <Dropzone onDrop={this.onDrop.bind(this)}>
+        <Dropzone onDrop={this.onDrop}>
           <div>Try dropping some files here, or click to select files to upload.</div>
         </Dropzone>
 
@@ -60,7 +39,11 @@ class FriendListApp extends Component {
         <AddFriendInput addFriend={actions.addFriend} />
 
 
+
         <FriendList friends={friendsById} actions={actions} />
+
+
+
 
       </div>
     );
