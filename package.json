@@ -81,10 +81,7 @@
     "react-dom": "15.0.1",
     "react-fetch": "0.0.9",
     "react-dropzone": "3.5.1",
-<<<<<<< HEAD
     "react-image-uploader": "1.0.0",
-=======
->>>>>>> 116eea248f4b907e1e4bcf2d431dbc788f53e6e8
     "react-redux": "4.4.5",
     "react-router": "2.3.0",
     "redux": "3.5.2"
