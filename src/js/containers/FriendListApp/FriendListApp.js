@@ -24,25 +24,21 @@ class FriendListApp extends Component {
   }
 
   callAPI(file){
+    var form = new FormData();
+    form.append('apikey', '4449e888-6974-45a0-8d75-a93f09a76bf0');
+    form.append('file', file);
 
-    var url="https://api.havenondemand.com/1/api/sync/ocrdocument/v1"
-    fetch(url,
-    {
-      method: 'POST',
-
-     headers: {
-        apikey:'85659764-5c9c-4455-a128-5be6247003f3'
-      },
-      mode: 'cors',
-      body: file
-    }).then(response=>{
-             console.log("this is response", response)
-          })
-      .catch(function(ex) {
-          console.log('parsing failed', ex)
+    var url="http://api.havenondemand.com/1/api/sync/ocrdocument/v1";
+    fetch(url, {
+        method: 'POST',
+        body: form })
+        .then(function(response) {
+            return response.json()
+        }).then(function(json) {
+            console.log('parsed json', json)
+        }).catch(function(ex) {
+            console.log('parsing failed', ex)
         })
-
-
   }
 
 
