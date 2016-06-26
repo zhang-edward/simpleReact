@@ -11,8 +11,7 @@ export default (
   <Route path="/" component={Root}>
     <IndexRoute component={MadLibberApp} />
 
-
-    <Route path="/login" component={HiApp}/>
+    <Route path="/hi" component={HiApp}/>
   </Route>
 );
     //<Redirect from="*" to="404" />

@@ -7,6 +7,8 @@ import { bindActionCreators } from 'redux';
 import * as FriendsActions from '../../actions/FriendsActions';
 import { AddFriendInput, FriendList } from '../../components';
 
+var Dropzone = require('react-dropzone');
+
 class FriendListApp extends Component {
 
   static propTypes = {
@@ -14,11 +16,23 @@ class FriendListApp extends Component {
     actions: PropTypes.object.isRequired
   };
 
+
+  onDrop (files) {
+  console.log('Received files: ', files);
+  }
+
+
   render () {
     const { friendList: { friendsById }, actions } = this.props;
 
     return (
       <div className="friendListApp">
+
+        <Dropzone onDrop={this.onDrop}>
+          <div>Try dropping some files here, or click to select files to upload.</div>
+        </Dropzone>
+
+
         <h1>Agale App</h1>
 
 
@@ -27,6 +41,10 @@ class FriendListApp extends Component {
 
 
         <FriendList friends={friendsById} actions={actions} />
+
+
+
+
       </div>
     );
   }
