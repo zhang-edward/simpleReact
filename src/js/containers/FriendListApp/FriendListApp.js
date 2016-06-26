@@ -24,9 +24,10 @@ class FriendListApp extends Component {
   }
 
   callAPI(file){
+      
     var form = new FormData();
     form.append('apikey', '4449e888-6974-45a0-8d75-a93f09a76bf0');
-    form.append('file', file);
+    form.append('file', file[0]);
 
     var url="http://api.havenondemand.com/1/api/sync/ocrdocument/v1";
     fetch(url, {
