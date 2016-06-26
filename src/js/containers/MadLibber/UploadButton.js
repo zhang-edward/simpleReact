@@ -1,14 +1,15 @@
-import React, { Component, PropTypes } from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import React, { Component } from 'react';
 
 var Dropzone = require('react-dropzone');
 
-class FriendListApp extends Component {
+export default class UploadButton extends Component {
+    constructor(props){
+        super(props);
+    }
 
-  onDrop (files) {
-    console.log('Received files: ', files);
-    this.callAPI(files);
+    onDrop (files) {
+        console.log('Received files: ', files);
+        this.callAPI(files);
   }
 
   callAPI(file) {
@@ -40,18 +41,3 @@ class FriendListApp extends Component {
     );
   }
 }
-
-function mapStateToProps(state) {
-  return {
-  };
-}
-
-function mapDispatchToProps(dispatch) {
-  return {
-  };
-}
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(FriendListApp);

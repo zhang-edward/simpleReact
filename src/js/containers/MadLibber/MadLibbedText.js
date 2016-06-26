@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import Fetch from 'fetch';
 
 export default class MadLibbedText extends Component {
 
