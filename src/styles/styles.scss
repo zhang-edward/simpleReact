@@ -1,6 +1,12 @@
 body {
     background-color: #3F5984;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/55/A_white_irish_goat.jpg");
+    background:/* top, transparent red, faked with gradient */
+        linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+        ),
+        /* bottom, image */
+        url("https://upload.wikimedia.org/wikipedia/commons/5/55/A_white_irish_goat.jpg");
     font-family: Futura, “Trebuchet MS”, Arial, sans-serif;
 }
 
