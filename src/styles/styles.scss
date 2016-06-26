@@ -1,4 +1,38 @@
 body {
-  background: #f1f1f1;
-  padding-top: 30px;
+    background-color: #3F5984;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/55/A_white_irish_goat.jpg");
+    font-family: Futura, “Trebuchet MS”, Arial, sans-serif;
+}
+
+#madlib-form {
+    color: #fff;
+}
+
+#madlib-form input{
+    height: auto;
+    width: auto;
+    display: inline;
+}
+
+.top-bar {
+    background-color: #243E6A;
+    padding: 40px 0 40px 0;
+}
+
+.app {
+    height: inherit !important;
+    width: inherit !important;
+}
+
+.upload-button {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    margin: 10px 0 10px 0;
+    outline: 2px dotted #ddd;
+}
+
+.website-title {
+    text-align: center;
+    color: #fff;
 }

@@ -31,7 +31,7 @@ export default class MadLibbedText extends Component {
 
     render() {
         return (
-            <div>
+            <div className="mad-libbed-text">
                 <div dangerouslySetInnerHTML={{__html: this.state.text}}></div>
             </div>
         );
