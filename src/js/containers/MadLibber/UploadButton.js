@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './UploadButton.scss'
 
 var Dropzone = require('react-dropzone');
 
@@ -33,9 +34,9 @@ export default class UploadButton extends Component {
 
   render () {
     return (
-      <div>
-        <Dropzone onDrop={this.onDrop.bind(this)}>
-          <div>Try dropping some files here, or click to select files to upload.</div>
+      <div >
+        <Dropzone onDrop={this.onDrop.bind(this)} className="classCenter" className="classBorder">
+          <div className="classCenter">Try dropping some files here, or click to select files to upload.</div>
         </Dropzone>
       </div>
     );
