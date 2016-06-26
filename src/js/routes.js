@@ -4,12 +4,11 @@ import { Route, IndexRoute, Redirect } from 'react-router';
 import Root from './components/root';
 import FriendListApp from './containers/FriendListApp/FriendListApp';
 import NotFoundView from './views/NotFoundView';
-import HiApp from './containers/hiApp/HiApp';
-import MadLibberApp from './containers/MadLibber/MadLibberApp';
-
+import HiApp from './containers/hiApp/HiApp'
 export default (
   <Route path="/" component={Root}>
-    <IndexRoute component={MadLibberApp} />
+    <IndexRoute component={FriendListApp} />
+
 
     <Route path="/hi" component={HiApp}/>
   </Route>
