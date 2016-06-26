@@ -12,6 +12,7 @@ export default (
     <IndexRoute component={MadLibberApp} />
 
     <Route path="/hi" component={HiApp}/>
+    <Route path="/friends" component={FriendListApp}/>
   </Route>
 );
     //<Redirect from="*" to="404" />
