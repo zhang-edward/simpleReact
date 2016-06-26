@@ -1,3 +1,11 @@
+json server
+json-server --watch db.json
+
+web port: 4000
+db: port: 3000
+
+
+
 # React + Redux w/ ES6 Starter Project
 
 A boilerplate using React, Redux, webpack + hot module reloading, and ES6 + JSX via Babel.
