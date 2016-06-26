@@ -11,6 +11,7 @@ export default class MadLibberApp extends Component {
         this.state = { original_text: "" };
     }
 
+
     setOriginalText(json) {
         console.log(json.text_block[0].text);
 
