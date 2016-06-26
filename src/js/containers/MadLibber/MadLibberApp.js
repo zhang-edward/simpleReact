@@ -10,6 +10,7 @@ export default class MadLibberApp extends Component {
         this.state = { original_text: "" };
     }
 
+
     setOriginalText(json) {
         console.log(json.text_block[0].text);
 
@@ -36,7 +37,7 @@ export default class MadLibberApp extends Component {
             <div>
                 <div className="top-bar">
                     <div className="columns medium-centered">
-                        <h1 className="website-title">Title</h1>
+                        <h1 className="website-title"><strong>Mad Libber</strong></h1>
                     </div>
                 </div>
                 <div className="row">
