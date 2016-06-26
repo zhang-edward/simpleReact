@@ -8,7 +8,7 @@ export default class MadLibberApp extends Component {
         return (
             <div>
                 <UploadButton />
-                <div className="">
+                <div className="row">
                     <MadLibbedText original_text={`To speak the truth, I had no
                             especial relish for such amusement at any time, and,
                             at that particular moment, would most willingly have
