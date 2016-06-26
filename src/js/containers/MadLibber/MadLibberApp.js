@@ -7,7 +7,8 @@ export default class MadLibberApp extends Component {
 
     render() {
         return (
-            <div className="classRight">
+            <div style="background-color:blue">
+                <h1 className= "title"> Mad Libber </h1>
                 <UploadButton className = "classRight"/>
                 <MadLibbedText original_text={"I am testing this hello world."}
                 className="classRight"/>
