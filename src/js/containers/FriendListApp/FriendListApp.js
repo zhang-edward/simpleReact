@@ -30,10 +30,7 @@ class FriendListApp extends Component {
     {
       method: 'POST',
 
-     headers: {
-        apikey:'85659764-5c9c-4455-a128-5be6247003f3'
-      },
-      mode: 'cors',
+
       body: file
     }).then(response=>{
              console.log("this is response", response)
