@@ -36,7 +36,7 @@ export default class MadLibberApp extends Component {
     render() {
         return (
             <div>
-                <div className="top-bar">
+                <div className="top-bar grooveBorder">
                     <div className="columns medium-centered">
                         <h1 className="website-title"><strong>Mad Libber</strong></h1>
                     </div>
