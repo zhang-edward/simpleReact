@@ -35,7 +35,7 @@ export default class UploadButton extends Component {
   render () {
     return (
       <div >
-        <Dropzone onDrop={this.onDrop.bind(this)} className="classCenter" className="classBorder">
+        <Dropzone onDrop={this.onDrop.bind(this)} className="classCenter" className="classBorder" className="whiteBackground">
           <div className="classCenter">Try dropping some files here, or click to select files to upload.</div>
         </Dropzone>
       </div>
